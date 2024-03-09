@@ -1,0 +1,79 @@
+.header{
+    width: 98vw;
+    border-bottom: 1px solid #ddd;
+    padding: 0 5rem;
+}
+
+.create-main-container{
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.create-char{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.create-char p{
+    font-size: 0.8rem;
+}
+
+.fetch-button{
+    background-color: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.fetch-button:active{
+    background-color: #ccc;
+}
+
+.input-box{
+    border: 1px solid #000;
+    resize: vertical;
+    border-radius: 5px;
+    height: 200px;
+    width: 40vw;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.create-title{
+    font-size: 4vw;
+    padding: 2rem 0;
+}
+
+@media screen and (max-width:768px){
+    .input-box{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:450px){
+    .create-title{
+        font-size: 6vw;
+    }
+
+    .create-char{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .create-fetch-button{
+        align-self: center;
+        /* padding-top: 1rem; */
+    }
+}
