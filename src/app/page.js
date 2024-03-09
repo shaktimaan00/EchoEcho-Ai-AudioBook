@@ -3,6 +3,7 @@ import { CardContent, Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import Header from "./components/Header"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
                 narrator.
               </p>
             </div>
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center lg:order-last"
               height="400"
@@ -58,7 +59,7 @@ export default function Home() {
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:grid-cols-[1fr_600px] lg:gap-10">
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
@@ -86,7 +87,7 @@ export default function Home() {
                 the perfect suggestions.
               </p>
             </div>
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
@@ -97,7 +98,7 @@ export default function Home() {
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:grid-cols-[1fr_600px] lg:gap-10">
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
@@ -122,7 +123,7 @@ export default function Home() {
                 original and exclusive stories.
               </p>
             </div>
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
@@ -133,7 +134,7 @@ export default function Home() {
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:grid-cols-[1fr_600px] lg:gap-10">
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
@@ -158,7 +159,7 @@ export default function Home() {
                 shows.
               </p>
             </div>
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
@@ -169,7 +170,7 @@ export default function Home() {
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:grid-cols-[1fr_600px] lg:gap-10">
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
@@ -194,7 +195,7 @@ export default function Home() {
                 you to other worlds.
               </p>
             </div>
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
@@ -296,7 +297,7 @@ export default function Home() {
             <div className="divide-y rounded-lg border">
               <div className="grid w-full grid-cols-3 items-stretch justify-center divide-x md:grid-cols-3">
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                  <Image
                     alt="Logo"
                     className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                     height="70"
@@ -305,7 +306,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                  <Image
                     alt="Logo"
                     className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                     height="70"
@@ -314,7 +315,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="mx-auto flex w-full items-center justify-center p-8">
-                  <img
+                  <Image
                     alt="Logo"
                     className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                     height="70"
@@ -325,7 +326,7 @@ export default function Home() {
               </div>
               <div className="grid w-full grid-cols-3 items-stretch justify-center divide-x md:grid-cols-3">
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                  <Image
                     alt="Logo"
                     className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                     height="70"
@@ -334,7 +335,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                  <Image
                     alt="Logo"
                     className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                     height="70"
@@ -343,7 +344,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                  <Image
                     alt="Logo"
                     className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                     height="70"
@@ -422,7 +423,7 @@ export default function Home() {
   //                 to you as soon as possible.
   //               </p>
   //             </div>
-  //             <img
+  //             <Image
   //               alt="Image"
   //               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
   //               height="400"
