@@ -2,8 +2,12 @@ import Link from "next/link"
 import { CardContent, Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
 import Header from "./components/Header"
 import Image from "next/image"
+import "./style.css"
+// import Audio1 from "../../../public/assests/audio1.webp"
 
 export default function Home() {
   return (
@@ -52,7 +56,7 @@ export default function Home() {
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center lg:order-last"
               height="400"
-              src="/placeholder.svg"
+              src="/audio1.webp"
               width="600"
             />
           </div>
@@ -62,8 +66,8 @@ export default function Home() {
             <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
-              height="400"
-              src="/placeholder.svg"
+              height="600"
+              src="/audio2.webp"
               width="600"
             />
             <div className="space-y-2 lg:items-start lg:text-left">
@@ -91,7 +95,7 @@ export default function Home() {
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
-              src="/placeholder.svg"
+              src="/audio3.jpeg"
               width="600"
             />
           </div>
@@ -102,7 +106,7 @@ export default function Home() {
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
-              src="/placeholder.svg"
+              src="/audio4.webp"
               width="600"
             />
             <div className="space-y-2 lg:items-start lg:text-left">
@@ -127,7 +131,7 @@ export default function Home() {
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
-              src="/placeholder.svg"
+              src="/audio5.webp"
               width="600"
             />
           </div>
@@ -138,7 +142,7 @@ export default function Home() {
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
-              src="/placeholder.svg"
+              src="/audio6.webp"
               width="600"
             />
             <div className="space-y-2 lg:items-start lg:text-left">
@@ -163,7 +167,7 @@ export default function Home() {
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
-              src="/placeholder.svg"
+              src="/audio7.jpeg"
               width="600"
             />
           </div>
@@ -174,7 +178,7 @@ export default function Home() {
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
-              src="/placeholder.svg"
+              src="/audio8.webp"
               width="600"
             />
             <div className="space-y-2 lg:items-start lg:text-left">
@@ -199,7 +203,7 @@ export default function Home() {
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="400"
-              src="/placeholder.svg"
+              src="/audio9.webp"
               width="600"
             />
           </div>
@@ -264,20 +268,38 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container grid items-center gap-6 px-4 md:px-6">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Listen to the Future</h2>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+        <section className="contact-section">
+          <div className="contact-container">
+            <div className="contact-heading">
+              <h2 className="ch-1 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Listen to the Future</h2>
+              <p className="ch-2 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Experience the next generation of audiobooks with our AI-generated platform.
               </p>
             </div>
-            <div className="mx-auto w-full max-w-sm space-y-2">
-              <form className="flex space-x-2">
-                <Input className="max-w-lg flex-1" placeholder="Enter your email" type="email" />
-                <Button type="submit">Sign Up</Button>
+            <div className="form-container">
+              <form className="flex flex-col">
+                <Label htmlFor="name" className="form-name pb-1 text-sm">Name</Label>
+                <Input
+                  className="transition-colors duration-300 ease-in-out rounded-md"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+                <Label htmlFor="email" className="pb-1 text-sm">Email</Label>
+                <Input className="" placeholder="Enter your email" type="email" />
+                <Label htmlFor="message" className="pb-1 text-sm">Message</Label>
+                <Textarea
+                  className="transition-colors duration-300 ease-in-out rounded-md"
+                  id="message"
+                  placeholder="Enter your message"
+                />
+                <Button 
+                  type="submit"
+                  className="mt-6 -center inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                >
+                  Sign Up
+                </Button>
               </form>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
+              <p className="text-xs pt-2 text-gray-500 dark:text-gray-400">
                 Sign up to get notified when we launch.
                 <Link className="underline underline-offset-2" href="#">
                   Terms & Conditions
@@ -286,90 +308,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
-          <div className="container grid items-center gap-4 px-4 text-center md:px-6">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Meet our Customers</h2>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Trusted by the best teams in the world. We help teams of all sizes.
-              </p>
-            </div>
-            <div className="divide-y rounded-lg border">
-              <div className="grid w-full grid-cols-3 items-stretch justify-center divide-x md:grid-cols-3">
-                <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <Image
-                    alt="Logo"
-                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                    height="70"
-                    src="/placeholder.svg"
-                    width="140"
-                  />
-                </div>
-                <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <Image
-                    alt="Logo"
-                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                    height="70"
-                    src="/placeholder.svg"
-                    width="140"
-                  />
-                </div>
-                <div className="mx-auto flex w-full items-center justify-center p-8">
-                  <Image
-                    alt="Logo"
-                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                    height="70"
-                    src="/placeholder.svg"
-                    width="140"
-                  />
-                </div>
-              </div>
-              <div className="grid w-full grid-cols-3 items-stretch justify-center divide-x md:grid-cols-3">
-                <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <Image
-                    alt="Logo"
-                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                    height="70"
-                    src="/placeholder.svg"
-                    width="140"
-                  />
-                </div>
-                <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <Image
-                    alt="Logo"
-                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                    height="70"
-                    src="/placeholder.svg"
-                    width="140"
-                  />
-                </div>
-                <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <Image
-                    alt="Logo"
-                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                    height="70"
-                    src="/placeholder.svg"
-                    width="140"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center space-x-4">
-              <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                href="#"
-              >
-                Contact Sales
-              </Link>
-              <Link
-                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-                href="#"
-              >
-                Learn more
-              </Link>
-            </div>
-          </div>
-        </section>
+        
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 Acme Inc. All rights reserved.</p>
@@ -387,63 +326,19 @@ export default function Home() {
   );
 }
 
-  // import Link from "next/link"
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/chNgMX8oHXP
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+// import { Label } from "@/components/ui/label"
+// import { Input } from "@/components/ui/input"
+// import { Textarea } from "@/components/ui/textarea"
+// import { Button } from "@/components/ui/button"
 
-  // export default function Component() {
-  //   return (
-  //     <div className="flex flex-col min-h-[100dvh]">
-  //       <header className="px-4 lg:px-6 h-14 flex items-center">
-  //         <Link className="flex items-center justify-center" href="#">
-  //           <MountainIcon className="h-6 w-6" />
-  //           <span className="sr-only">Acme Inc</span>
-  //         </Link>
-  //         <nav className="ml-auto flex gap-4 sm:gap-6">
-  //           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-  //             Features
-  //           </Link>
-  //           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-  //             Pricing
-  //           </Link>
-  //           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-  //             About
-  //           </Link>
-  //           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-  //             Contact
-  //           </Link>
-  //         </nav>
-  //       </header>
-  //       <main className="flex-1">
-          
-  //         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
-  //           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:grid-cols-[1fr_600px] lg:gap-10">
-  //             <div className="space-y-2 lg:items-start lg:text-left">
-  //               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Support</h2>
-  //               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-  //                 Have a question or need assistance? Our support team is here to help. Reach out to us and we'll get back
-  //                 to you as soon as possible.
-  //               </p>
-  //             </div>
-  //             <Image
-  //               alt="Image"
-  //               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
-  //               height="400"
-  //               src="/placeholder.svg"
-  //               width="600"
-  //             />
-  //           </div>
-  //         </section>
-  //       </main>
-  //       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-  //         <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 Acme Inc. All rights reserved.</p>
-  //         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-  //           <Link className="text-xs hover:underline underline-offset-4" href="#">
-  //             Terms of Service
-  //           </Link>
-  //           <Link className="text-xs hover:underline underline-offset-4" href="#">
-  //             Privacy
-  //           </Link>
-  //         </nav>
-  //       </footer>
-  //     </div>
-  //   )
-  // }
+// export default function Component() {
+//   return (
+    
+//   )
+// }
+

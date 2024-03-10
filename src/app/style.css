@@ -1,7 +1,19 @@
 .header{
-    width: 98vw;
+    width: 96vw;
     border-bottom: 1px solid #ddd;
     padding: 0 5rem;
+}
+
+@media screen and (max-width:450px){
+    .header nav{
+        display: none;
+        /* padding: 0; */
+    }
+    
+    .header{
+        /* width: 50vw; */
+        padding: 0 2rem;
+    }
 }
 
 .create-main-container{
@@ -75,5 +87,51 @@
     .create-fetch-button{
         align-self: center;
         /* padding-top: 1rem; */
+    }
+}
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    background-color: red;
+    padding: 2rem;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 60vw; */
+}
+
+.contact-heading{
+    padding-bottom: 2rem;
+}
+
+.form-container{
+    width: 50vw;
+}
+
+.form-container Input{
+    margin-bottom: 0.8rem;
+    outline: none;
+    /* border: none; */
+}
+
+@media screen and (max-width:768px) {
+    .contact-section{
+        width: 97vw;
+    }
+
+    .form-container{
+        width: 75vw;
+    }
+
+    .ch-2{
+        font-size: 0.8rem;
     }
 }
