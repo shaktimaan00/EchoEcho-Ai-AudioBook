@@ -22,6 +22,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 87vh;
 }
 
 .text-div{
@@ -41,7 +42,7 @@
 }
 
 .fetch-button{
-    background-color: #ddd;
+    background-color: #444;
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
     font-size: 0.8rem;
@@ -134,4 +135,20 @@
     .ch-2{
         font-size: 0.8rem;
     }
+}
+
+.create-dropdown{
+    border: 1px solid #000;
+}
+
+.select-button{
+    /* background-color: red; */
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.select-value{
+    border-radius: 15px;
+    background-color: #999;
 }
