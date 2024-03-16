@@ -4,7 +4,6 @@ import FetchAudio from "./FetchAudio";
 import { useState } from "react";
 import "../style.css";
 import Header from "../components/Header";
-import {select, selectSection, option} from "@nextui-org/react";
 import SelectModelID from "./SelectModelId";
 
 
